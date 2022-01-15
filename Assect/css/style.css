@@ -1,0 +1,847 @@
+/* ----------------------------------------------------------------
+------------------------------Google Font------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&family=Manrope&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+/* ----------------------------------------------------------------
+------------------------------Google Font------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+-----------------------------Global Style------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------------------------------------------
+-----------------------------Global Style------------------------ */
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+-----------------------------Header Style------------------------ */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.logo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3A3A3A;
+}
+
+
+/* ---nav style--- */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+}
+
+nav ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 34px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+nav ul img {
+    height: 19px;
+    width: 19px;
+    margin-left: 34px;
+    margin-top: 3px;
+}
+
+nav ul img:last-child {
+    Width: 29px;
+    Height: 24px;
+    margin-top: 0;
+}
+
+.card-icon {
+    display: none;
+}
+
+.card-icon img {
+    Width: 29px;
+    Height: 24px;
+    margin-top: 0;
+}
+
+/* ----------------------------------------------------------------
+------------------------------Header Style----------------------- */
+
+
+
+
+
+/* ----------------------------------------------------------------
+-----------------------------Hero Style-------------------------- */
+.hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+/* ---hero left col start--- */
+.hero-left-col {
+    width: 60%;
+    padding-right: 100px;
+}
+
+.hero-left-col h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 65px;
+}
+
+.hero-left-col p {
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 35px 0;
+    width: 450px;
+}
+
+.hero-left-col a {
+    padding: 10px 24px;
+    background: #E02C6D;
+    border-radius: 41px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.2s ease-in-out;
+}
+
+.hero-left-col a i {
+    margin-left: 7px;
+    transition: 0.2s ease-in-out;
+}
+
+.hero-left-col a:hover {
+    background: #3A3A3A;
+    transition: 0.2s ease-in-out;
+    padding-right: 25px;
+}
+
+.hero-left-col a:hover i {
+    margin-left: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+/* ---hero right col start--- */
+.hero-right-col {
+    width: 40%;
+    position: relative;
+}
+
+.hero-right-col img {
+    width: 475px;
+    height: 475px;
+    cursor: pointer;
+}
+
+
+.hero-right-col img:last-child {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+    width: 440px;
+    height: 414px;
+}
+
+@keyframes move {
+    0% {
+        top: 5px;
+    }
+
+    50% {
+        top: 35px;
+    }
+
+    100% {
+        top: 5px;
+    }
+}
+
+.hero-section:hover img:last-child {
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*-------------------------------------------------------------
+-----------------------------Hero Style-------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+-----------------------------brand Style------------------------- */
+.brand-section {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.hr-row {
+    width: 1110px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+.brand-container {
+    padding: 35px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----------------------------------------------------------------
+-----------------------------brand Style------------------------- */
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+---------------------------Product Style------------------------- */
+.product-section {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+
+.product-headding h2 {
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card {
+    width: 31%;
+    display: flex;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 7px;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    height: 286px;
+}
+
+.product-card h2 {
+    color: #18191F;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 16px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Inter', sans-serif;
+}
+
+.product-card .rating {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product-card .rating .rating-icon i {
+    width: 16px;
+    height: 16px;
+    color: #FB8200;
+    margin-right: 10px;
+}
+
+.product-card .rating p {
+    color: #5E6366;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-card p {
+    color: #787885;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 143%;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.product-card:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid #E02C6D;
+    transition: 0.3s ease;
+}
+
+.seeMore-btn {
+    width: 100%;
+    margin-top: 25px;
+    text-align: right;
+}
+
+.seeMore-btn a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(224, 44, 109, 0.87);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.seeMore-btn a i {
+    margin-left: 5px;
+}
+
+.seeMore-btn a:hover {
+    color: #0A0826;
+    transition: 0.3s ease-in-out;
+}
+
+/* ----------------------------------------------------------------
+---------------------------Product Style------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+---------------------------Review Style-------------------------- */
+.review-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-left-col {
+    width: 40%;
+    height: 450px;
+}
+
+/* ---review righ col start--- */
+
+.review-right-col {
+    width: 50%;
+}
+
+.review-right-col h1 {
+    color: #0A0826;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review-right-col .review {
+    width: 80%;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-left: 2px solid #e02c6e00;
+    cursor: pointer;
+}
+
+.review-right-col .review:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    border-left: 2px solid #E02C6D;
+    transition: 0.3s ease-in-out;
+}
+
+.review-right-col .review .customar-info {
+    display: flex;
+    align-items: center;
+}
+
+.review-right-col .review .customar-info img {
+    height: 60px;
+    width: 60px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.review-right-col .review .customar-info .info {
+    margin-top: -15px;
+}
+
+.review-right-col .review .customar-info h2 {
+    color: #0A0826;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review-right-col .review .customar-info p {
+    color: #0A0826;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review-right-col .review .customar-massage p {
+    color: #787885;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review-right-col .review .review-icon i {
+    width: 16px;
+    height: 16px;
+    color: #FB8200;
+    margin-right: 10px;
+}
+
+/* ----------------------------------------------------------------
+---------------------------Review Style-------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+---------------------------Fotter Style-------------------------- */
+footer {
+    width: 100%;
+    background: #0A0826;
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer h1 {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+    color: #D9DBE1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Manrope', sans-serif;
+}
+
+footer .social-icons {
+    margin-top: 17px;
+}
+
+footer .social-icons a {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    background: #ffffff1e;
+    border-radius: 50%;
+    margin: 0 8px;
+    position: relative;
+}
+
+footer .social-icons a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+footer .social-icons a:hover i {
+    color: #FF725E;
+}
+
+/* ----------------------------------------------------------------
+---------------------------Fotter Style-------------------------- */
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    /* ----------------------------------------------------------------
+    -----------------------------Global Style------------------------ */
+    main {
+        max-width: 991px;
+        margin: 0 auto;
+    }
+
+    /* ----------------------------------------------------------------
+    -----------------------------Global Style------------------------ */
+}
+
+
+
+
+
+/* ----------------------------------------------------------------
+---------------------Media Query for tab-------------------------- */
+@media only screen and (max-width: 991px) {
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------Global Style------------------------ */
+
+    main {
+        width: 667px;
+    }
+
+    /* ----------------------------------------------------------------
+    -----------------------------Global Style------------------------ */
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------Header Style------------------------ */
+    header {
+        margin-top: 50px;
+    }
+
+    /* ---nav style--- */
+    nav ul li {
+        margin-left: 25px;
+    }
+
+    nav ul img {
+        margin-left: 25px;
+    }
+
+    /* ----------------------------------------------------------------
+    ------------------------------Header Style----------------------- */
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------Hero Style-------------------------- */
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    /* ---hero left col start--- */
+    .hero-left-col {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 30px;
+    }
+
+    /* ---hero right col start--- */
+    .hero-right-col {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .hero-right-col img:last-child {
+        left: 15%;
+    }
+
+    /* ----------------------------------------------------------------
+    -----------------------------Hero Style-------------------------- */
+
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------brand Style------------------------- */
+
+    .hr-row {
+        width: 100%;
+    }
+
+    .brand-container {
+        padding: 35px 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    /* ----------------------------------------------------------------
+    -----------------------------brand Style------------------------- */
+
+
+
+    /* ----------------------------------------------------------------
+    ---------------------------Product Style------------------------- */
+    .product-card {
+        width: 48%;
+    }
+
+    /* ----------------------------------------------------------------
+    ---------------------------Product Style------------------------- */
+
+
+
+    /* ----------------------------------------------------------------
+    ---------------------------Review Style-------------------------- */
+    .review-section {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .review-left-col {
+        width: 80%;
+        height: 450px;
+    }
+
+    /* ---review righ col start--- */
+
+    .review-right-col {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    /* ----------------------------------------------------------------
+    ---------------------------Review Style-------------------------- */
+}
+
+/* ----------------------------------------------------------------
+---------------------Media Query for tab-------------------------- */
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------
+---------------------Media Query for Mobile---------------------- */
+
+
+@media only screen and (max-width: 767px) {
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------Global Style------------------------ */
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    /* ----------------------------------------------------------------
+    -----------------------------Global Style------------------------ */
+
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------Header Style------------------------ */
+    header {
+        margin-top: 40px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* ---nav style--- */
+
+    nav {
+        display: none;
+    }
+
+    .card-icon {
+        display: block;
+    }
+
+    /* ----------------------------------------------------------------
+    ------------------------------Header Style----------------------- */
+
+
+
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------Hero Style-------------------------- */
+    /* ---hero left col start--- */
+    .hero-left-col {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .hero-left-col h1 {
+        font-size: 39px;
+        line-height: 47px;
+    }
+
+    .hero-left-col p {
+        width: 350px;
+    }
+
+    /* ---hero right col start--- */
+    .hero-right-col img {
+        width: 100%;
+    }
+
+    .hero-right-col img:last-child {
+        width: 80%;
+        height: 55%;
+        top: 19%;
+        left: 10%;
+    }
+
+    /* ----------------------------------------------------------------
+    -----------------------------Hero Style-------------------------- */
+
+
+    /* ----------------------------------------------------------------
+    -----------------------------brand Style------------------------- */
+
+    .brand-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ----------------------------------------------------------------
+    -----------------------------brand Style------------------------- */
+
+    /* ----------------------------------------------------------------
+    ---------------------------Product Style------------------------- */
+    .product-card {
+        width: 100%;
+    }
+
+    /* ----------------------------------------------------------------
+    ---------------------------Product Style------------------------- */
+
+
+    /* ----------------------------------------------------------------
+    ---------------------------Review Style-------------------------- */
+    .review-section {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .review-left-col {
+        width: 80%;
+        height: auto;
+    }
+
+    /* ---review righ col start--- */
+
+    .review-right-col {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .review-right-col .customar-info .info h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .review-right-col .customar-info .info .review-icon {
+        font-size: 12px;
+    }
+
+    /* ----------------------------------------------------------------
+    ---------------------------Review Style-------------------------- */
+
+}
+
+/* ----------------------------------------------------------------
+---------------------Media Query for Mobile---------------------- */
